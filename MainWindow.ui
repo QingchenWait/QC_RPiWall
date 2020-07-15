@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="MainTab">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>0</y>
+     <width>461</width>
+     <height>320</height>
+    </rect>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::East</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="Tab_Home">
+    <attribute name="title">
+     <string>主页</string>
+    </attribute>
+    <widget class="QLabel" name="TimeLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>241</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>50</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WN_Location">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>100</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>347</x>
+       <y>260</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Pictures.qrc">
+       <normaloff>:/Button_Index/V4Beta3_BgShutDownBtn_45x45.png</normaloff>:/Button_Index/V4Beta3_BgShutDownBtn_45x45.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>100</width>
+       <height>100</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>293</x>
+       <y>260</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Pictures.qrc">
+       <normaloff>:/Button_Index/V4Beta3_BgRefreshDownBtn_45x45.png</normaloff>:/Button_Index/V4Beta3_BgRefreshDownBtn_45x45.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>100</width>
+       <height>100</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>420</width>
+       <height>320</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="Pictures.qrc">:/Bg/HomeBg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DateLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SecondLabel">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>190</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WN_Temp">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>130</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>32</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WN_Status">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>180</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <zorder>label</zorder>
+    <zorder>TimeLabel</zorder>
+    <zorder>pushButton_2</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>DateLabel</zorder>
+    <zorder>SecondLabel</zorder>
+    <zorder>WN_Temp</zorder>
+    <zorder>WN_Status</zorder>
+    <zorder>WN_Location</zorder>
+   </widget>
+   <widget class="QWidget" name="Tab_Weather">
+    <attribute name="title">
+     <string>天气</string>
+    </attribute>
+    <widget class="QLabel" name="ForecastToday">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>80</y>
+       <width>91</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ForecastNx_Temp">
+     <property name="geometry">
+      <rect>
+       <x>276</x>
+       <y>226</y>
+       <width>91</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Bg_Weather">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>420</width>
+       <height>320</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="Pictures.qrc">:/Bg/WeatherBg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Location">
+     <property name="geometry">
+      <rect>
+       <x>34</x>
+       <y>68</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Date">
+     <property name="geometry">
+      <rect>
+       <x>34</x>
+       <y>96</y>
+       <width>151</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Temp">
+     <property name="geometry">
+      <rect>
+       <x>34</x>
+       <y>192</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>37</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Status">
+     <property name="geometry">
+      <rect>
+       <x>34</x>
+       <y>251</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Title">
+     <property name="geometry">
+      <rect>
+       <x>194</x>
+       <y>76</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Title_2">
+     <property name="geometry">
+      <rect>
+       <x>194</x>
+       <y>102</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Title_3">
+     <property name="geometry">
+      <rect>
+       <x>194</x>
+       <y>128</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Title_4">
+     <property name="geometry">
+      <rect>
+       <x>194</x>
+       <y>154</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Nx_Title">
+     <property name="geometry">
+      <rect>
+       <x>213</x>
+       <y>198</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="WF_Nx_Time">
+     <property name="geometry">
+      <rect>
+       <x>209</x>
+       <y>226</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ForecastNx_Status">
+     <property name="geometry">
+      <rect>
+       <x>276</x>
+       <y>202</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>FreeSans</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="RefreshButton">
+     <property name="geometry">
+      <rect>
+       <x>368</x>
+       <y>9</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Pictures.qrc">
+       <normaloff>:/Button_Index/V4Beta3_BgRefreshDownBtn_45x45.png</normaloff>:/Button_Index/V4Beta3_BgRefreshDownBtn_45x45.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+    </widget>
+    <zorder>Bg_Weather</zorder>
+    <zorder>ForecastToday</zorder>
+    <zorder>WF_Location</zorder>
+    <zorder>WF_Date</zorder>
+    <zorder>WF_Temp</zorder>
+    <zorder>WF_Status</zorder>
+    <zorder>WF_Title</zorder>
+    <zorder>WF_Title_2</zorder>
+    <zorder>WF_Title_3</zorder>
+    <zorder>WF_Title_4</zorder>
+    <zorder>WF_Nx_Title</zorder>
+    <zorder>WF_Nx_Time</zorder>
+    <zorder>ForecastNx_Status</zorder>
+    <zorder>ForecastNx_Temp</zorder>
+    <zorder>RefreshButton</zorder>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>关于</string>
+    </attribute>
+    <widget class="QLabel" name="Bg_About">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>420</width>
+       <height>320</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="Pictures.qrc">:/Bg/AboutBg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="HomeBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="Pictures.qrc">
+     <normaloff>:/Button_Left/V4Beta3_HomeBtn_60x60.png</normaloff>:/Button_Left/V4Beta3_HomeBtn_60x60.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="WeatherBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="Pictures.qrc">
+     <normaloff>:/Button_Left/V4Beta3_WeatherBtn_60x60.png</normaloff>:/Button_Left/V4Beta3_WeatherBtn_60x60.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AboutBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>200</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="Pictures.qrc">
+     <normaloff>:/Button_Left/V4Beta3_AboutBtn_60x60.png</normaloff>:/Button_Left/V4Beta3_AboutBtn_60x60.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LeftSlide">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>63</width>
+     <height>320</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="Pictures.qrc">:/Bg/Left_Slide.bmp</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>LeftSlide</zorder>
+  <zorder>MainTab</zorder>
+  <zorder>HomeBtn</zorder>
+  <zorder>WeatherBtn</zorder>
+  <zorder>AboutBtn</zorder>
+ </widget>
+ <resources>
+  <include location="Pictures.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>QueryWeather()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>437</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>387</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HomeBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>TabToHome()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>17</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>70</x>
+     <y>4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>WeatherBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>TabToWeather()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AboutBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>TabToAbout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>18</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>18</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RefreshButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>QueryWeather()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>449</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clearResult()</slot>
+  <slot>QueryWeather()</slot>
+  <slot>ForecastWeather()</slot>
+  <slot>TabToHome()</slot>
+  <slot>TabToWeather()</slot>
+  <slot>TabToAbout()</slot>
+  <slot>RefreshTimeLabels()</slot>
+ </slots>
+</ui>

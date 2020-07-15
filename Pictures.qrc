@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="Bg">
+    <file alias="AboutBg">Ericwall 4 Beta3 - About.bmp</file>
+    <file alias="HomeBg">Ericwall 4 Beta3 - Home.png</file>
+    <file alias="WeatherBg">Ericwall 4 Beta3 - Weather.bmp</file>
+    <file>Left_Slide.bmp</file>
+  </qresource>
+  <qresource prefix="Button_Index">
+    <file>V4Beta3_BackHomeBtn_45x45.png</file>
+    <file>V4Beta3_RefreshBtn_45x45.png</file>
+    <file>V4Beta3_BgRefreshDownBtn_45x45.png</file>
+    <file>V4Beta3_BgShutDownBtn_45x45.png</file>
+    <file>V4Beta3_ShutDownBtn_45x45.png</file>
+  </qresource>
+  <qresource prefix="Button_Left">
+    <file>V4Beta3_HomeBtn_60x60.png</file>
+    <file>V4Beta3_AboutBtn_60x60.png</file>
+    <file>V4Beta3_WeatherBtn_60x60.png</file>
+  </qresource>
+</RCC>
